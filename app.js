@@ -14,34 +14,34 @@ if(e.target.classList.contains('btn-inicio')){
   audio.play()
   audio.loop =true;
   $paso1.style.display='none'  
-  $article.innerHTML=`<div class="template center"><p> ${Array[0]}</p></div>`
+  $article.innerHTML=`<div class="template"><p> ${Array[0]}</p></div>`
   $btnNext.classList.remove('none')
 }
 
 if(e.target.classList.contains('uno')){
-  $article.innerHTML=`<div class="template center"><p> ${Array[1]}</p></div>`
+  $article.innerHTML=`<div class="template"><p> ${Array[1]}</p></div>`
   $btnNext.classList.remove('uno')
   setTimeout(() => { $btnNext.classList.add('dos')},100);
 
 }
 if(e.target.classList.contains('dos')){
-  $article.innerHTML=`<div class="template center"><p> ${Array[2]}</p></div>`
+  $article.innerHTML=`<div class="template"><p> ${Array[2]}</p></div>`
   $btnNext.classList.remove('dos')
   setTimeout(() => { $btnNext.classList.add('tres')},100);
 }
 
 if(e.target.classList.contains('tres')){
-  $article.innerHTML=`<div class="template center"><p> ${Array[3]}</p></div>`
+  $article.innerHTML=`<div class="template "><p> ${Array[3]}</p></div>`
   $btnNext.classList.remove('tres')
   setTimeout(() => { $btnNext.classList.add('cuatro')},100);
 }
 if(e.target.classList.contains('cuatro')){
-  $article.innerHTML=`<div class="template center"><p> ${Array[4]}</p></div>`
+  $article.innerHTML=`<div class="template "><p> ${Array[4]}</p></div>`
   $btnNext.classList.remove('cuatro')
   setTimeout(() => { $btnNext.classList.add('cinco')},100);
 }
 if(e.target.classList.contains('cinco')){
-  $article.innerHTML=`<div class="template center"><video src="img/ipo.mp4" preload="auto" ></video></div>`
+  $article.innerHTML=`<div class="template "><video src="img/ipo.mp4" preload="auto" ></video></div>`
   $btnNext.classList.remove('cuatro')
   
 }
