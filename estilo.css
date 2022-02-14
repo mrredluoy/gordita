@@ -1,6 +1,14 @@
+
+@font-face{
+  font-family:'amor';
+  src: url('img/Valentine\ Cute.ttf');
+ } 
+
+
 *{
   margin: 0px;
   padding:0px;box-sizing: border-box;
+  font-family:'amor';
 }
 body{
   background-color:#fa4eaa8c;
@@ -51,7 +59,7 @@ body{
   width: 40%;
   height: 10%;
   border-style: none;
-  font-size:7vw ;
+  font-size:5vw ;
   cursor: pointer;
   border-radius:30px ;
   color:white;
@@ -85,10 +93,10 @@ animation: animacion 15s linear infinite;
   
 }
 .template p{
-  font-size: 6.5vw;
+  font-size: 5vw;
   text-align:center;
-  color: #323232;
-  line-height: 15vw;
+  color: #575151;
+  line-height: 10vw;
  
 
 }
@@ -97,12 +105,12 @@ animation: animacion 15s linear infinite;
   width: 250px;
   height: 60px;
   border-radius: 30px;
-  padding: 5px;
+  padding-bottom: 3.5%;
   border-style: none;
-  font-size:10vw;
-  text-align: center;
+  font-size:7vw;
+  text-align:center;
   position: absolute;
-  bottom: 17vw;
+  bottom: 20vw;
 }
 
 .none{
