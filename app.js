@@ -5,7 +5,7 @@ const audio=document.getElementById('audio')
 
 document.addEventListener('click',inicio)
 
-const Array=['El amor es una experiencia universal que nos conmueve a todos, pero a veces no hallamos las palabras adecuadas para expresarlo. A lo largo de la historia los poetas han sabido decir aquello que todos sentimos de formas creativas y elocuentes.' ,'Por ello, en este artículo conoceremos una selección de treinta y siete poemas de amor cortos de poetas reconocidos, que pueden dar inspiración a cualquier corazón ansioso de expresarse.','El amor no llegó a ser un tema muy desarrollado por Antonio Machado, pero el poema a continuación es una de esas pocas, pero felices ocasiones en que el poeta le dedica su intención creadora. En el poema, el amante muestra su pasión y ansiedad ante el misterio del amor.' ,'El amor no se condiciona. Quien ama debe abrazar la totalidad del ser, el acierto y el error. Amar no es admiración y no hace casa en la buena suerte. El amor se decide o, simplemente, se da.']
+const Array=['Hola mi gordita no sabes lo feliz que soy al tenerte  ami lado,ha pasado mucho tiempo para darme cuenta q siempre estuviste ahi ,me apoyaste cuando lo necesite' ,'Nose como paso  pero  	&#322;&#322;egaste a enomorarme ,hoy quiero decirte  que tu eres  la primera persona en quien  pienso en las mañanas y la ultima en las noches','estoy tan agradecido de encontrarme contigo ,pense  ya no confiar en nadie pero tu ,siendo solo tu,te ganaste mi corazon me hiciste sentir esas mariposas, y esos suspiros  cursis como dices' ,'te admiro eres una valiente y maravillosa mujer. Eres muy especial para mi y  no te are promesas falsas ,pero siempre dare lo mejor de mi  para  que tu y yo estemos bien.','...TE QUIERO... ','FELIZ SAN VALENTIN   MI   GORDITA']
 console.log(Array)
 
 function inicio(e){
@@ -19,30 +19,36 @@ if(e.target.classList.contains('btn-inicio')){
 }
 
 if(e.target.classList.contains('uno')){
+  $btnNext.style.backgroundColor='#FFBBBB'
   $article.innerHTML=`<div class="template"><p> ${Array[1]}</p></div>`
   $btnNext.classList.remove('uno')
-  setTimeout(() => { $btnNext.classList.add('dos')},100);
+  setTimeout(() => { $btnNext.classList.add('dos');$btnNext.style.backgroundColor='	#FFFFFF'},100);
 
 }
 if(e.target.classList.contains('dos')){
-  $article.innerHTML=`<div class="template"><p> ${Array[2]}</p></div>`
+  $btnNext.style.backgroundColor='#FFBBBB'
+  $article.innerHTML=`<div class="template"><p lang="es"> ${Array[2]}</p></div>`
   $btnNext.classList.remove('dos')
-  setTimeout(() => { $btnNext.classList.add('tres')},100);
+  setTimeout(() => { $btnNext.classList.add('tres');$btnNext.style.backgroundColor='	#FFFFFF'},100);
 }
 
 if(e.target.classList.contains('tres')){
+  $btnNext.style.backgroundColor='#FFBBBB'
   $article.innerHTML=`<div class="template "><p> ${Array[3]}</p></div>`
   $btnNext.classList.remove('tres')
-  setTimeout(() => { $btnNext.classList.add('cuatro')},100);
+  setTimeout(() => { $btnNext.classList.add('cuatro');$btnNext.style.backgroundColor='	#FFFFFF'},100);
 }
 if(e.target.classList.contains('cuatro')){
+  $btnNext.style.backgroundColor='#FFBBBB'
   $article.innerHTML=`<div class="template "><p> ${Array[4]}</p></div>`
   $btnNext.classList.remove('cuatro')
-  setTimeout(() => { $btnNext.classList.add('cinco')},100);
+  setTimeout(() => { $btnNext.classList.add('cinco');$btnNext.style.backgroundColor='	#FFFFFF'},100);
 }
 if(e.target.classList.contains('cinco')){
-  $article.innerHTML=`<div class="template "><video src="img/ipo.mp4" preload="auto" ></video></div>`
+  $btnNext.style.backgroundColor='#FFBBBB'
+  $article.innerHTML=`<div class="template "><p> ${Array[5]}</p></div>`
   $btnNext.classList.remove('cuatro')
+  setTimeout(() => { $btnNext.classList.add('cinco');$btnNext.style.backgroundColor='	#FFFFFF'},100);
   
 }
 
