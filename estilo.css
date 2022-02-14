@@ -22,9 +22,11 @@ body{
   width: 100%;
   height: 10%;
   letter-spacing: 5px;
-  font-size: 5vw;
+  font-size: 4.5vw;  
   color:#FA4EAB;
+  text-align: center;
 }
+
 .conten-article{
   width: 100%;
   height: 90%;
@@ -85,7 +87,6 @@ animation: animacion 15s linear infinite;
   font-size: 6.5vw;
   text-align:center;
   color: #323232;
-  line-height: 30px;
   margin-top: -11%px;
 }
 .btnIZ{
