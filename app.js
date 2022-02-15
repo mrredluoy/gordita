@@ -5,7 +5,7 @@ const audio=document.getElementById('audio')
 
 document.addEventListener('click',inicio)
 
-const Array=['Hola mi gordita no sabes lo feliz que soy al tenerte  ami lado,ha pasado mucho tiempo para darme cuenta q siempre estuviste ahi ,me apoyaste cuando lo necesite' ,'Nose como paso  pero  	&#322;&#322;egaste a enomorarme ,hoy quiero decirte  que tu eres  la primera persona en quien  pienso en las mañanas y la ultima en las noches','estoy tan agradecido de encontrarme contigo ,pense  ya no confiar en nadie pero tu ,siendo solo tu,te ganaste mi corazon me hiciste sentir esas mariposas, y esos suspiros  cursis como dices' ,'te admiro eres una valiente y maravillosa mujer. Eres muy especial para mi y  no te are promesas falsas ,pero siempre dare lo mejor de mi  para  que tu y yo estemos bien.','...TE QUIERO... ','FELIZ SAN VALENTIN   MI   GORDITA']
+const Array=['Hola mi gordita no sabes lo feliz que soy al tenerte  ami lado,ha pasado mucho tiempo para darme cuenta q siempre estuviste ahi ,me apoyaste cuando lo necesite' ,'Nose como paso  pero  	&#322;&#322;egaste a enomorarme ,quiero decirte  que tu eres  la primera persona y la ultima  en quien  pienso en mis dias','estoy tan agradecido de encontrarme contigo ,pense  ya no confiar en nadie pero tu ,siendo solo tu,te ganaste mi corazon me hiciste sentir esas mariposas, y esos suspiros  cursis como dices ,con tu delicadeza ,tu sencilles, tu carinio  y tu hermosura','te admiro eres una valiente y maravillosa mujer. Eres muy especial para mi y  no te are promesas falsas ,pero siempre dare lo mejor de mi  para  que tu y yo estemos bien.','💗💗TE QUIERO💗💗💗 ','FELIZ SAN VALENTIN   MI   GORDITA💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗att:Youlber']
 console.log(Array)
 
 function inicio(e){
@@ -47,8 +47,17 @@ if(e.target.classList.contains('cuatro')){
 if(e.target.classList.contains('cinco')){
   $btnNext.style.backgroundColor='#FFBBBB'
   $article.innerHTML=`<div class="template "><p> ${Array[5]}</p></div>`
-  $btnNext.classList.remove('cuatro')
-  setTimeout(() => { $btnNext.classList.add('cinco');$btnNext.style.backgroundColor='	#FFFFFF'},100);
+  $btnNext.classList.remove('cinco')
+  setTimeout(() => { $btnNext.classList.add('seis');$btnNext.style.backgroundColor='	#FFFFFF'},100);
+  $btnNext.textContent='Inicio'
+  
+}
+if(e.target.classList.contains('seis')){
+  $btnNext.style.backgroundColor='#FFBBBB'
+  
+  setTimeout(() => {$btnNext.style.backgroundColor='	#FFFFFF'},100);
+  setTimeout(() => {location.reload()},500);
+ 
   
 }
 
